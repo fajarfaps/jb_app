@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .product-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .product-image img {
+            max-width: 32%;
+            height: auto;
+        }
+        .product-details {
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .product-price {
+            font-size: 22px;
+            color: green;
+            font-weight: bold;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: gray;
+            margin-left: 10px;
+        }
+        .discount {
+            color: red;
+            margin-left: 10px;
+        }
+        .btn-custom {
+            background-color: #00c853;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .btn-custom:hover {
+            background-color: #00a743;
+        }
+        .product-options {
+            margin: 20px 0;
+        }
+        .product-options h6 {
+            margin-bottom: 10px;
+        }
+        .option-button {
+            margin: 5px 5px 5px 0;
+        }
+        .product-info {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img src="product_image.jpg" alt="Product Image" >
+        </div>
+        <div class="product-details">
+            <p class="text-muted">Smartphone</p>
+            <h1 class="product-title">SAMSUNG GALAXY A55 5G</h1>
+            <div class="d-flex align-items-center">
+                <span class="badge bg-warning text-dark me-2">4.1</span>
+                <p class="m-0">87 Reviews</p>
+            </div>
+            <p class="product-price">Rp. 1.999.999 <span class="original-price">Rp. 2.999.999</span><span class="discount">50% OFF</span></p>
+            <div class="product-options">
+                <h6>Internal</h6>
+                <div>
+                    <button class="btn btn-outline-secondary option-button">4GB / 128GB</button>
+                    <button class="btn btn-outline-secondary option-button">6GB / 256GB</button>
+                    <button class="btn btn-success option-button">8GB / 512GB</button>
+                </div>
+                <h6>Warna</h6>
+                <div>
+                    <button class="btn btn-outline-secondary option-button">White</button>
+                    <button class="btn btn-outline-secondary option-button">Black</button>
+                </div>
+            </div>
+            <div class="product-info">
+                <a class="text-decoration-none" data-bs-toggle="collapse" href="#productDetails" role="button" aria-expanded="false" aria-controls="productDetails">
+                    <img src="vector_38_x2.svg" alt="View More Icon" width="20">
+                    <p class="m-0">View More</p>
+                </a>
+                <div class="collapse" id="productDetails">
+                    <div class="card card-body">
+                        <h6>Product Details</h6>
+                        <ul>
+                            <li>Chipset - Snapdragon 5534 5G</li>
+                            <li>Battery - 5000 mAh</li>
+                            <li>Display - 6.4" Amoled Display</li>
+                            <li>Release - 2024</li>
+                            <li>Lorem ipsum lorem ipsumlorem ipsumlorem ipsum</li>
+                            <li>Lorem ipsum lorem ipsumlorem ipsumlorem ipsum</li>
+                            <li>Lorem ipsum lorem ipsumlorem ipsumlorem ipsum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-custom mt-4 rounded pill"  >LAKUKAN PEMBAYARAN</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
