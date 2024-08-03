@@ -6,6 +6,40 @@
     <title>Portal Pulsa - Beranda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
+    <style>
+        .menu-aplikasi {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 10px;
+        }
+        .menu-aplikasi .col-md-2 {
+            flex: 0 0 auto;
+            display: inline-block;
+            width: auto;
+            margin-right: 10px;
+            text-align: center;
+        }
+        .menu-aplikasi img {
+            width: 60px; /* Ukuran ikon yang lebih kecil */
+            height: 60px; /* Ukuran ikon yang lebih kecil */
+        }
+
+        @media (min-width: 769px) {
+            .menu-aplikasi {
+                justify-content: space-around;
+                overflow-x: hidden;
+                flex-wrap: wrap;
+                padding-bottom: 0;
+            }
+            .menu-aplikasi img {
+                width: 100px; /* Ukuran ikon untuk desktop */
+                height: 100px; /* Ukuran ikon untuk desktop */
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-light bg-light fixed-bottom">
@@ -31,7 +65,7 @@
     <div class="container my-5">
         <div class="row mb-4">
             <div class="col-12 text-center">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -71,8 +105,8 @@
                 </form>
             </div>
         </div>
-        <div class="row text-center mb-4 justify-content-center">
-            <h4>Menu Aplikasi</h4>
+        <div class="text-center menu-aplikasi">
+            <h4 class="w-100"></h4>
             <div class="col-md-2">
                 <img src="money_jar_611_x2.svg" class="img-fluid mb-2" alt="Gratis 5 Menit">
                 <p>Gratis 5 Menit</p>
@@ -136,9 +170,6 @@
             </div>
         </div>
     </div>
-    <footer class="bg-primary text-white text-center py-3">
-        <p>&copy; 2023 Portal Pulsa. All Rights Reserved.</p>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF6HhPZ6Sr+4a1p6c9TX5M3eC9iiQquZypLTW3Q0+Cl" crossorigin="anonymous"></script>
 </body>
 </html>
